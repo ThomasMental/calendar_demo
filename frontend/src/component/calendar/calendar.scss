@@ -1,0 +1,55 @@
+$calendar-box-width: 120px;
+$calendar-box-height: 90px;
+$calendar-header-height: 75px;
+$icon-size: 50px;
+$grey-text-color: #b4b4b4;
+$grey-border-color: #e4e4e4;
+$grey-background-color: #fafafa;
+
+.calendar {
+    width: 60%;
+    margin: auto;
+    font-size: 13px;
+}
+
+.calendar th {
+    width: $calendar-box-width;
+    height: $calendar-header-height;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.calendar th, .calendar td {
+    border: 1px solid $grey-border-color;
+}
+
+.calendar td {
+    text-align: left;
+    vertical-align: top;
+    width: $calendar-box-width;
+    height: 120px;
+    padding: 10px 0px 0px 5px;
+}
+
+.prev-month, .next-month {
+    color: $grey-text-color;
+}
+
+.month-heading {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    padding: 10px 0px;
+}
+
+.btn-left, .btn-right {
+    width: $icon-size;
+    height: $icon-size;
+    padding: 10px 0px;
+    vertical-align: middle;
+}
+
+.calendar-weekend {
+    background-color: $grey-background-color;
+}
